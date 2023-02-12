@@ -1,0 +1,60 @@
+
+.section-review {
+/* background-color: #111; */
+}
+.section-header{
+  position: relative;
+  text-align: center;
+  font-weight: 900;
+  color: #000;
+}
+.section-header span {
+display: block;
+font-size: 15px;
+font-weight: 300;
+}
+.testimonials{
+  max-width: 1000px;
+  /* padding: 0 15px 50px;
+  margin: 0 auto 80px auto; */
+}
+.single-item{
+  background: #ffffffd3;
+  color: #111;
+  padding: 15px;
+  margin: 30px 15px;
+}
+.profile{
+  margin-bottom: 30px;
+  text-align: center;    
+}
+.img-area {
+margin: 0 15px 15px 15px;
+}
+.img-area img {
+height: 120px;
+width: 120px;
+border-radius: 50%;
+border: 7px solid #006a4e;
+}
+.content{
+  font-size: 18px;
+}
+.content p {
+  font-size: 16px;
+text-align: justify;
+}
+.content p span {
+font-size: 48px;
+margin-right: 20px;
+  color: #006a4e;
+}
+.socials i {
+margin-right: 25px;
+}
+.bio h4 {
+font-family: 'Berkshire Swash', cursive;
+}
+.carousel-control-next-icon, .carousel-control-prev-icon {
+background-color: #006a4e;
+}

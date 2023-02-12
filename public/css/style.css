@@ -89,6 +89,16 @@ img{
   /* background: antiquewhite; */
 }
 
+.btn-request{
+  margin-left: 120px;
+  width: 300px; 
+}
+@media only screen and (max-width: 992px) {
+  .btn-request{
+    margin-left: 20px;
+    width: 270px; 
+  }
+}
 .btn-outline-primary{
   color: #00493c;
     background-color: transparent;
@@ -100,6 +110,8 @@ img{
   background-color: #00493c;
   border-color: #00493c
 }
+
+
 
 /* section 2 */
 .our-service-sass {
@@ -133,7 +145,7 @@ img{
 }
 @media only screen and (max-width: 768px) {
   .our-service-sass .service-block {
-    height: 240px;
+    height: auto;
   }
 }
 .our-service-sass .service-block .title a {
@@ -725,3 +737,29 @@ img{
   }
 }
 
+
+/* section-sponsors */
+.section-sponsors{
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Footer */
+.section-footer{
+  color: #fff;
+  height: 60px;
+  background-color: #006a4e;
+}
+.section-footer .text{
+  font-family: AGaramondPro-Regular, sans-serif; 
+  font-size: 12px;
+  letter-spacing: 1.2px;
+  text-align: left;
+}
+
+@media only screen and (max-width: 768px){
+  .section-footer .text{
+    font-size: 8px;
+    letter-spacing: normal;
+  }
+}

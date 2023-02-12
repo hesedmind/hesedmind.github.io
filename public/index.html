@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,103 +15,114 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css"
     integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
   <link rel="stylesheet" href="./css/style.css">
-  </head>
+  <link rel="stylesheet" href="./css/carousel.css">
+  
+</head>
+
 <body>
-    <!-- Navigation -->
-    <section class="section-nav">
-      <nav class="navbar navbar-expand-lg navbar-light">
-          <div class="container">
-              <!-- Logo(手機版隱藏) -->
-              <div class="d-none d-md-block px-5">
-                  <div class="d-inline mr-1">
-                      <img src="./image/logo.png"/>
-                  </div>
-              </div>
-              <!-- Logo(手機版顯示) -->
-              <div class="d-block d-md-none position-absolute top-0 start-50 pt-1" style="margin-left: -10px;">
-                  <img src="./image/logo.png"/>
-              </div>
-              <!-- Nav Item -->
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
-                  aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                  <ul class="navbar-nav me-auto">
-                    <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="#">首頁</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">服務項目</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">成員介紹</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">專業課程資訊</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">關於我們</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">聯絡我們</a>
-                    </li>
-                  </ul>
-                  <!-- Dropdown(手機版隱藏) -->
-                  <div class="inline-block px-5 d-none d-lg-block">
-                      <div class="btn-group">
-                          <a class="btn" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
-                              <span>
-                                <i class="fas fa-globe" style="color:white"></i>
-                              </span>
-                          </a>
-                          <ul class="dropdown-menu dropdown-menu-end" id="userDropdown">
-                              <li>
-                                  <div class="dropdown-item">
-                                      <span id="userName">用戶名字</span>
-                                      <span class="badge rounded-pill bg-secondary" id="groupName">級別一</span>
-                                  </div>
-                              </li>
-                              <li><a class="dropdown-item" href="javascript:void(0);" onclick="logout()"> <i
-                                          class="fas fa-sign-out-alt fa-fw"></i> 登出 </a>
-                              </li>
-                              <div class="dropdown-divider"></div>
-                              <li class="px-3">
-                                  <i class="fas fa-code-branch"></i>
-                                  <span>ver 0.0.1</span>
-                              </li>
-                          </ul>
-                      </div>
-                  </div>
-                  <!-- Dropdown(手機版顯示)  -->
-                  <ul class="navbar-nav d-block d-lg-none">
-                      <li class="nav-item">
-                          <a class="nav-link" aria-current="page" href="#">個人服務中心</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="#">登出</a>
-                      </li>
-                  </ul>
-              </div>
+  <!-- Navigation -->
+  <section class="section-nav">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <!-- Logo(手機版隱藏) -->
+        <div class="d-none d-md-block px-5">
+          <div class="d-inline mr-1">
+            <img src="./image/logo.png" />
           </div>
-      </nav>
+        </div>
+        <!-- Logo(手機版顯示) -->
+        <div class="d-block d-md-none position-absolute top-0 start-50 pt-1" style="margin-left: -10px;">
+          <img src="./image/logo.png" />
+        </div>
+        <!-- Nav Item -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+          aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">首頁</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">服務項目</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">成員介紹</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">專業課程資訊</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">關於我們</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">聯絡我們</a>
+            </li>
+          </ul>
+          <!-- Dropdown(手機版隱藏) -->
+          <div class="inline-block px-5 d-none d-lg-block">
+            <div class="btn-group">
+              <a class="btn" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                <span>
+                  <i class="fas fa-globe" style="color:white"></i>
+                </span>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end" id="userDropdown">
+                <li>
+                  <div class="dropdown-item">
+                    <span id="userName">用戶名字</span>
+                    <span class="badge rounded-pill bg-secondary" id="groupName">級別一</span>
+                  </div>
+                </li>
+                <li><a class="dropdown-item" href="javascript:void(0);" onclick="logout()"> <i
+                      class="fas fa-sign-out-alt fa-fw"></i> 登出 </a>
+                </li>
+                <div class="dropdown-divider"></div>
+                <li class="px-3">
+                  <i class="fas fa-code-branch"></i>
+                  <span>ver 0.0.1</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Dropdown(手機版顯示)  -->
+          <ul class="navbar-nav d-block d-lg-none">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">個人服務中心</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">登出</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
   </section>
   <!-- Banner -->
   <section class="section-banner container py-5">
-    <div class="row justify-content-around align-items-center text-center py-5">
+    <div class="row justify-content-around align-items-center text-center pt-5">
       <div class="col-4">
         <img src="./image/banner.png" alt="" srcset="">
-        <div class="btn btn-lg btn-outline-primary mt-4">
-          <i class="fas fa-headset fa-lg"></i> &nbsp;
-          <span>Request Consultation</span></div>
       </div>
       <div class="col-4">
         <img src="./image/Head.png" alt="" srcset="">
       </div>
     </div>
-    
-    </section>
+    <!-- 免費諮詢 -->
+    <div class="btn-request">
+      <!-- lg -->
+      <div class="btn btn-lg btn-outline-primary mt-4 d-none d-lg-block">
+        <i class="fas fa-headset fa-lg"></i> &nbsp;
+        <span>Request Consultation</span>
+      </div>
+      <!-- md -->
+      <div class="btn btn-outline-primary mt-4 d-lg-none d-sm-block d-md-block">
+        <i class="fas fa-headset"></i> &nbsp;
+        <span>Request Consultations</span>
+      </div>
+    </div>
+  </section>
   <!-- Section -->
   <section>
     <div class="our-service-sass hide-pr show-pr">
@@ -118,7 +130,7 @@
         <div class="theme-title-one text-center">
           <h2 class="main-title">Services</h2>
         </div> <!-- /.theme-title-one -->
-        
+
         <div class="inner-wrapper">
           <div class="row">
             <div class="col-lg-3 col-md-6 single-block aos-init aos-animate" data-aos="fade-up">
@@ -133,8 +145,8 @@
                 <div class="hover-content"></div>
                 <i class="flaticon-web user"></i>
                 <h5 class="title"><a href="#">INDIVIDUAL & FAMILY COUNSELING</a></h5>
-                <p>Lorem ipsum dolor si amet, an dusino situ  sint pertinacia constituto, mir es dignsius quo great.</p>
-                <a class="detail-button"><i class="icon-img"><img src="./image/service1.png" width="100%"></i></a>
+                <p>Lorem ipsum dolor si amet, an dusino situ sint pertinacia constituto, mir es dignsius quo great.</p>
+                <a class="detail-button"><i class="icon-img"><img src="/public/image/service1.png" width="100%"></i></a>
               </div> <!-- /.service-block -->
             </div> <!-- /.single-block -->
             <div class="col-lg-3 col-md-6 single-block aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
@@ -149,8 +161,9 @@
                 <div class="hover-content"></div>
                 <i class="flaticon-value icon-s"></i>
                 <h5 class="title"><a href="#">PLAY THERAPY</a></h5>
-                <p>Lorem ipsum dolor si amet, an dusino situ  sint pertinacia constituto, mir es dignsius quo great.</p>
-                <a href="#" class="detail-button"><i class="icon-img"><img src="./image/service2.png"  width="100%"></i></a>
+                <p>Lorem ipsum dolor si amet, an dusino situ sint pertinacia constituto, mir es dignsius quo great.</p>
+                <a href="#" class="detail-button"><i class="icon-img"><img src="/public/image/service2.png"
+                      width="100%"></i></a>
               </div> <!-- /.service-block -->
             </div> <!-- /.single-block -->
             <div class="col-lg-3 col-md-6 single-block aos-init aos-animate" data-aos="fade-up" data-aos-delay="500">
@@ -165,9 +178,9 @@
                 <div class="hover-content"></div>
                 <i class="flaticon-login icon-s"></i>
                 <h5 class="title"><a href="#">COUPLES COUNSELING</a></h5>
-                <p>Lorem ipsum dolor si amet, an dusino situ  sint pertinacia constituto, mir es dignsius quo great.</p>
+                <p>Lorem ipsum dolor si amet, an dusino situ sint pertinacia constituto, mir es dignsius quo great.</p>
                 <a href="#" class="detail-button"><i class="icon-img">
-                  <img src="./image/service3.png" width="100%">
+                    <img src="/public/image/service3.png" width="100%">
                   </i></a>
               </div> <!-- /.service-block -->
             </div> <!-- /.single-block -->
@@ -183,9 +196,9 @@
                 <div class="hover-content"></div>
                 <i class="flaticon-login icon-s"></i>
                 <h5 class="title"><a href="#">COUPLES COUNSELING</a></h5>
-                <p>Lorem ipsum dolor si amet, an dusino situ  sint pertinacia constituto, mir es dignsius quo great.</p>
+                <p>Lorem ipsum dolor si amet, an dusino situ sint pertinacia constituto, mir es dignsius quo great.</p>
                 <a href="#" class="detail-button"><i class="icon-img">
-                  <img src="./image/service3.png" width="100%">
+                    <img src="/public/image/service3.png" width="100%">
                   </i></a>
               </div> <!-- /.service-block -->
             </div> <!-- /.single-block -->
@@ -194,5 +207,132 @@
       </div> <!-- /.container -->
     </div>
   </section>
+  <!-- 推薦 -->
+  <section class="section-review">
+    <div class="container">
+        <h1 class="section-header">Client Review <span>What Clients Says</span></h1>
+        <div class="testimonials">
+            
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="single-item">
+                      <div class="row">
+                          <div class="col-md-5">
+                              <div class="profile">
+                                  <div class="img-area">
+                                      <img src="https://cdn-icons-png.flaticon.com/512/9561/9561558.png" alt="">
+                                  </div>
+                                  <div class="bio">
+                                      <h4>Dave Wood</h4>
+                                      <h6>Web Developer</h6>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-md-6">
+                              <div class="content">
+                                  <p><span><i class="fa fa-quote-left"></i></span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel a eius excepturi molestias commodi aliquam error magnam consectetur laboriosam numquam, minima eveniet nostrum sequi saepe ipsam non ea, inventore tenetur! Corporis commodi consequatur molestiae voluptatum!</p>
+                                  <p class="socials">
+                                      <i class="fa fa-twitter"></i>
+                                      <i class="fa fa-behance"></i>
+                                      <i class="fa fa-pinterest"></i>
+                                      <i class="fa fa-dribbble"></i>
+                                      <i class="fa fa-vimeo"></i>
+                                  </p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="single-item">
+                      <div class="row">
+                          <div class="col-md-5">
+                              <div class="profile">
+                                  <div class="img-area">
+                                      <img src="https://cdn-icons-png.flaticon.com/512/1154/1154473.png" alt="">
+                                  </div>
+                                  <div class="bio">
+                                      <h4>Martin Guptill</h4>
+                                      <h6>UI/UX Designer</h6>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-md-6">
+                              <div class="content">
+                                  <p><span><i class="fa fa-quote-left"></i></span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel a eius excepturi molestias commodi aliquam error magnam consectetur laboriosam numquam, minima eveniet nostrum sequi saepe ipsam non ea, inventore tenetur! Corporis commodi consequatur molestiae voluptatum!</p>
+                                  <p class="socials">
+                                      <i class="fa fa-twitter"></i>
+                                      <i class="fa fa-behance"></i>
+                                      <i class="fa fa-pinterest"></i>
+                                      <i class="fa fa-dribbble"></i>
+                                      <i class="fa fa-vimeo"></i>
+                                  </p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="single-item">
+                      <div class="row">
+                          <div class="col-md-5">
+                              <div class="profile">
+                                  <div class="img-area">
+                                      <img src="https://cdn-icons-png.flaticon.com/512/1154/1154448.png" alt="">
+                                  </div>
+                                  <div class="bio">
+                                      <h4>Stephen Jones</h4>
+                                      <h6>Graphic Designer</h6>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-md-6">
+                              <div class="content">
+                                  <p><span><i class="fa fa-quote-left"></i></span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel a eius excepturi molestias commodi aliquam error magnam consectetur laboriosam numquam, minima eveniet nostrum sequi saepe ipsam non ea, inventore tenetur! Corporis commodi consequatur molestiae voluptatum!</p>
+                                  <p class="socials">
+                                      <i class="fa fa-twitter"></i>
+                                      <i class="fa fa-behance"></i>
+                                      <i class="fa fa-pinterest"></i>
+                                      <i class="fa fa-dribbble"></i>
+                                      <i class="fa fa-vimeo"></i>
+                                  </p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            
+        </div>
+    </div>
+</section>
+<!-- sponsor -->
+<section class="section-sponsors p-5">
+  <div>
+    <img src="./image/sponsor.png" alt="" srcset="">
+  </div>
+</section>
+<!-- Footer -->
+<section class="section-footer d-flex justify-content-center">
+  <div class="align-self-center d-flex flex-row">
+      <div>
+        <img src="./image/logo.png"/>
+      </div>
+      <span class="text align-self-center ms-3">©2022
+          Chesed International Counseling Leadership | All rights reserved</span>
+  </div>
+</section>
+
 </body>
+
 </html>
